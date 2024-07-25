@@ -1,0 +1,157 @@
+/* Estilo Geral */
+body {
+    color: white;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo da Barra de Rolagem */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    width: 30px;
+}
+
+/* Estilo da Barra Lateral (Aside) */
+.aside {
+    position: fixed;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    backdrop-filter: blur(10px);
+}
+
+.aside > .a {
+    text-decoration: none;
+    color: white;
+    /* width: 20px; */
+    /* height: 20px; */
+    margin: 10px 50px 10px 10px;
+}
+
+.aside > .gh {
+    margin-left: 5px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.aside > .in {
+    margin-left: 0;
+}
+.aside .a:hover{
+    background-color: blue;
+    box-shadow: 0 0 5px blue;
+}
+/* Estilo da Introdução */
+.bg-introducao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #2b2323, rgb(15, 15, 20));
+}
+
+.introducao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nome {
+    font-size: 80px;
+    margin: -180px 0 0 250px;
+}
+
+.dev {
+    font-size: 55px;
+    margin-top: 80px;
+}
+
+/* Estilo das Tecnologias */
+.bg-tecs {
+    min-height: 100vh;
+    background-image: linear-gradient(90deg, #2b2323, rgb(15, 15, 20));
+}
+
+.tecnologias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(45deg, rgb(19, 12, 12), rgb(17, 8, 8));
+    height: 100vh;
+}
+
+.tecs-titulo {
+    font-size: 55px;
+    margin-bottom: 100px;
+}
+
+.container-tecs {
+    margin: 30px 0;
+    display: flex;
+}
+
+.tec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    margin: 0 30px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.tec:hover {
+    border: 3px solid blue;
+}
+
+.nome-tec {
+    margin-left: 10px;
+}
+
+.icon {
+    color: white;
+    height: 70px;
+    object-fit: contain;
+}
+
+/* Estilo da Seção Sobre Mim */
+.bg-sobre {
+    height: 100vh;
+    background-image: linear-gradient(45deg, #2b2323, rgb(15, 15, 20));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-mim {
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre {
+    font-size: 55px;
+    margin-bottom: 100px;
+}
+
+.paragrafo {
+    word-spacing: 7px;
+    line-height: 30px;
+    width: 800px;
+}
