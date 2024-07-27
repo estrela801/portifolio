@@ -1,7 +1,7 @@
 /* Estilo Geral */
 body {
     color: white;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -23,6 +23,10 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
     width: 30px;
+}
+
+.titulo{
+    text-transform: capitalize;
 }
 
 /* Estilo da Barra Lateral (Aside) */
