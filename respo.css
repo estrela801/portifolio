@@ -3,6 +3,7 @@
         min-width: 100vw;
         overflow-x: hidden;
     }
+    /* SEÇÃO INTRODUÇÃO */
     .aside{
         display: none;
 
@@ -21,7 +22,7 @@
     .sobre{
         width: 300px;
     }
-    
+    /* SEÇÃO TECS */
     .container-tecs {
         display: grid;
         width: 200px;
@@ -47,6 +48,16 @@
     .tec-git,.tec-css{
         margin-right: 10px;
     }
+    /* SEÇÃO FORMACAO */
+    .bg-formacao{
+        min-width: 98vw;
+        width: 100%;
+    }
+    .formacao{
+        font-size: 20px;
+        width: 200px;
+    }
+    /* seção Sobre */
     
     .paragrafo{
         width: 300px;
