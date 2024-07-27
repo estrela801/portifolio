@@ -28,6 +28,7 @@ body {
 
 .titulo{
     text-transform: capitalize;
+    font-size: 55px;
 }
 
 
@@ -145,7 +146,25 @@ body {
     text-decoration: none;
 }
 
-
+.details-tec{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 200px;
+    margin-top: 30px;
+    background-color: red;
+    border-radius: 8px;
+}
+.tec-details{
+    background-color: blue;
+    width: 100%;
+    height:100% ;
+    border-radius: inherit;
+}
+.nome-tec-titulo{
+    font-size: 30px;
+}
 .nome-tec {
     margin-left: 10px;
 }
@@ -159,7 +178,7 @@ body {
 
 /* Estilo da Seção Formação */
 .bg-formacao{
-    background-color:rgba(14, 11, 11, 0.897);
+    background-color:rgb(14, 11, 11);
     /* animation: UpDown 2s linear infinite; */
     height: 100vh;
     display: flex;
