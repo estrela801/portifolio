@@ -36,6 +36,9 @@
         flex-direction: column;
         align-items: center;
     }
+    .tec:hover {
+        border: none;
+    }
     .icon{
         width: 60px;
         height: 70px;
