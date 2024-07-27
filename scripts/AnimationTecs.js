@@ -24,5 +24,5 @@ const details = {}
 //     teste()
 }
 document.addEventListener("DOMContentLoaded", ExecuteDetails )
-}
+
 
