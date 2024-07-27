@@ -38,8 +38,7 @@ body {
 .aside > .a {
     text-decoration: none;
     color: white;
-    /* width: 20px; */
-    /* height: 20px; */
+    border-radius: 4px;
     margin: 10px 50px 10px 10px;
 }
 
@@ -55,6 +54,8 @@ body {
 .aside .a:hover{
     background-color: blue;
     box-shadow: 0 0 5px blue;
+    transition: 200ms;
+    transform: scale(1.1);
 }
 /* Estilo da Introdução */
 .bg-introducao {
