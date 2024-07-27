@@ -1,0 +1,61 @@
+@media screen and (max-width: 450px) {
+    body{
+        min-width: 100vw;
+        overflow-x: hidden;
+    }
+    .aside{
+        display: none;
+
+    }
+    .introduco{
+        width: 200px;
+    }
+    .nome{
+        font-size: 50px;
+        margin:0 auto ;
+    }
+    .dev{
+        font-size: 40px;
+        margin: 30px 0 0 50px;
+    }
+    .sobre{
+        width: 300px;
+    }
+    
+    .container-tecs {
+        display: grid;
+        width: 200px;
+        grid-template-columns: repeat(2, 100px);
+        grid-template-rows: repeat(5, 100px);
+        gap: 10px 50px; 
+        margin-right: 50px;
+    }
+    .tec{
+        height: 70px;
+        margin: 30px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon{
+        width: 60px;
+        height: 70px;
+        margin: 5px 10px ;
+    }
+    .tec-git,.tec-css{
+        margin-right: 10px;
+    }
+    
+    .paragrafo{
+        width: 300px;
+    }
+    .sobre,.tecs-titulo{
+        font-size: 40px;
+    }
+    .contatos-respo{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: black;
+        height: 70px;
+    }
+}
