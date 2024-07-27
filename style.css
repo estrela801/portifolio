@@ -129,6 +129,33 @@ body {
     object-fit: contain;
 }
 
+
+/* Estilo da Seção Formação */
+.bg-formacao{
+    background-color:rgba(14, 11, 11, 0.897);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.formacao-titulo{
+    font-size: 55px;
+    margin-top: 180px;
+}
+.formacao{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.alinhamento{
+    margin-bottom: 80px;
+}
+.escola,.laert,.eurofarma,.senai{
+    margin: 38px 0;
+}
 /* Estilo da Seção Sobre Mim */
 .bg-sobre {
     height: 100vh;
@@ -152,6 +179,7 @@ body {
     word-spacing: 7px;
     line-height: 30px;
     width: 800px;
+    font-size: 30px;
 }
 .contatos-respo{
     display: none;
