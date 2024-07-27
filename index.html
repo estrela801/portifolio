@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifólio | Rodrigo</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="respo.css">
+    <link rel="stylesheet" href="./estilos/reset.css" />
+    <link rel="stylesheet" href="./estilos/respo.css" />
+    <link rel="stylesheet" href="./estilos/style.css">
+    <script src="index.js" defer type="module"></script>
   </head>
   <body>
     <section class="bg-introducao">
@@ -65,14 +66,14 @@
         <div class="sobre-mim">
             <h2 class="sobre titulo">sobre mim</h2>
             <p class="paragrafo">
-                Olá, me chamo Rodrigo tenho 17 anos, sou desenvolvedor front-end com conhecimento em Node.js e na biblioteca React. <br>
-                Sou apaixonado por tecnologia e design, e acredito que um bom design pode transformar a experiência do usuário. <br>
-                Se você deseja saber mais sobre meu trabalho ou discutir um projeto em potencial, sinta-se à vontade para entrar em contato comigo.
+                  Olá, me chamo Rodrigo tenho 17 anos, sou desenvolvedor front-end com conhecimento em Node.js e na biblioteca React. <br>
+                  Sou apaixonado por tecnologia e design, e acredito que um bom design pode transformar a experiência do usuário. <br>
+                  Se você deseja saber mais sobre meu trabalho ou discutir um projeto em potencial, sinta-se à vontade para entrar em contato comigo.
             </p>
         </div>
     </section>
-
-    <section class="bg-formacao">
+    <div id="particles-js">
+        <section class="bg-formacao">
            <span class="formacao-titulo titulo">formação</span>
            <div class="formacao">
       
@@ -83,12 +84,15 @@
             <div class="senai">desenvolvimento front-end: senai SP</div>
           </div>
         </div>
-    </section>
+    </section>  
+    </div>
+
 
     <section class="contatos-respo">
       <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin " target="_blank" class="a in"><img src="icons/icons8-linkedin.svg" alt=""></a>
       <a href="https://github.com/estrela801" target="_blank" class="a gh"><img src="icons/github.png" alt=""></a>
       <a href="https://www.instagram.com/devestrela801?igsh=MTdsM2swNmg3YW03Zg==" target="_blank"><img src="icons/icons8-instagram.svg" alt="" class="a"></a>
     </section>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   </body>
 </html>
