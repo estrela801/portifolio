@@ -26,10 +26,13 @@
     .container-tecs {
         display: grid;
         width: 200px;
-        grid-template-columns: repeat(2, 100px);
+        grid-template-columns: repeat(4, 100px);
         grid-template-rows: repeat(5, 100px);
         gap: 10px 50px; 
         margin-right: 50px;
+    }
+    .details-tec{
+        width: 100px;
     }
     .tec{
         height: 70px;
