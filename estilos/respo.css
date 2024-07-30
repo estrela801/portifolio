@@ -45,7 +45,7 @@
         margin-right: 50px;
     }
     .js {
-        animation-delay: 200ms;
+        animation-delay: 100ms;
     }
     .container-tecs:nth-child(2) {
         animation-delay: 300ms;
