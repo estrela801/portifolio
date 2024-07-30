@@ -1,40 +1,82 @@
 @media screen and (max-width: 450px) {
-    body{
-        min-width: 100vw;
+    body {
+        width: 100vw;
         overflow-x: hidden;
     }
-    /* SEÇÃO INTRODUÇÃO */
-    .aside{
-        display: none;
-
+    /* ANIMAÇÕES MOBILE */
+    .bouncing {
+        animation: Bouncing 1s alternate cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
     }
-    .introduco{
+    @keyframes Bouncing {
+        from {
+            transform: translateY(-15px);   
+        }
+        to {
+            transform: translateY(2px);
+        }
+    }
+
+    /* --------------------------------------------------------------- */
+    /* SEÇÃO INTRODUÇÃO */
+    .aside {
+        display: none;
+    }
+    .introduco {
         width: 200px;
     }
-    .nome{
+    .nome {
         font-size: 50px;
-        margin:0 auto ;
+        margin: 0 auto;
     }
-    .dev{
+    .dev {
         font-size: 40px;
         margin: 30px 0 0 50px;
     }
-    .sobre{
+    .sobre {
         width: 300px;
     }
     /* SEÇÃO TECS */
     .container-tecs {
         display: grid;
         width: 200px;
-        grid-template-columns: repeat(4, 100px);
+        grid-template-columns: repeat(2, 100px);
         grid-template-rows: repeat(5, 100px);
         gap: 10px 50px; 
         margin-right: 50px;
     }
-    .details-tec{
-        width: 100px;
+    .js {
+        animation-delay: 200ms;
     }
-    .tec{
+    .container-tecs:nth-child(2) {
+        animation-delay: 300ms;
+    }
+    .css {
+        animation-delay: 200ms;
+    }
+    .react {
+        animation-delay: 480ms;
+    }
+    .container-tecs:nth-child(5) {
+        animation-delay: 390ms;
+    }
+    .node {
+        animation-delay: 450ms;
+    }
+    .fig {
+        animation-delay: 450ms;
+    }
+    .py {
+        animation-delay: 480ms;
+    }
+
+    .tecs-titulo {
+        margin: 100px 0 0 0;
+    }
+    .details-tec {
+        width: 100px;
+        display: none;
+    }
+    .tec {
         height: 70px;
         margin: 30px 0;
         flex-direction: column;
@@ -43,32 +85,33 @@
     .tec:hover {
         border: none;
     }
-    .icon{
+    .icon {
         width: 60px;
         height: 70px;
-        margin: 5px 10px ;
+        margin: 5px 10px;
     }
-    .tec-git,.tec-css{
+    .tec-git, .tec-css {
         margin-right: 10px;
     }
     /* SEÇÃO FORMACAO */
-    .bg-formacao{
+    .bg-formacao {
         min-width: 98vw;
         width: 100%;
     }
-    .formacao{
+    .formacao {
         font-size: 20px;
         width: 200px;
     }
-    /* seção Sobre */
-    
-    .paragrafo{
+    /* SEÇÃO SOBRE */
+    .paragrafo {
         width: 300px;
+        font-size: 20px;
+        font-weight: 800;
     }
-    .sobre,.tecs-titulo{
+    .sobre, .tecs-titulo {
         font-size: 40px;
     }
-    .contatos-respo{
+    .contatos-respo {
         display: flex;
         justify-content: space-around;
         align-items: center;
