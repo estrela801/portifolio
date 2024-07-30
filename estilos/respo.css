@@ -21,6 +21,9 @@
     .aside {
         display: none;
     }
+    bg-introducao{
+        background-position: 300px 300px;
+    }
     .introduco {
         width: 200px;
     }
