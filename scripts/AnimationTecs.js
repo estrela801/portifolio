@@ -9,28 +9,45 @@ const details = {
     python: "Python é uma linguagem de programação versátil e popular, conhecida por sua simplicidade e legibilidade, amplamente usada em desenvolvimento web, ciência de dados, inteligência artificial e automação."
 };
 
-function addClass(el){
-    el.classList.add('appear')
-    setTimeout(()=>{
-        el.classList.remove('appear')
-    },350)
+let timeoutId;
+
+function verificaMouse(a, b) {
+    document.querySelectorAll('.tec').forEach(element => {
+        element.addEventListener('mouseleave', _ => {
+
+                timeoutId = setTimeout(() => {
+                a.innerHTML = ''
+                b.innerHTML = ''
+            }, 2500);
+            element.addEventListener('mouseover', () => {
+            clearTimeout(timeoutId); 
+        }); 
+       })         
+     }
+)}
+
+function addClass(el) {
+    el.classList.add('appear');
+    setTimeout(() => {
+        el.classList.remove('appear');
+    }, 350);
 }
 
- function addDetails(tech){
-    console.log('teste');
-    const detail = details[tech.toLowerCase()]
-    if(detail){
-        const containerDetail = document.querySelector('.tec-details')
-        const techTitle = document.querySelector('.nome-tec-titulo')
-        containerDetail.innerHTML=detail
-        techTitle.innerHTML=tech
-        addClass(containerDetail)
+function addDetails(tech) {
+    const detail = details[tech.toLowerCase()];
+    if (detail) {
+        const containerDetail = document.querySelector('.tec-details');
+        const techTitle = document.querySelector('.nome-tec-titulo');
+        containerDetail.innerHTML = detail;
+        techTitle.innerHTML = tech;
+        addClass(containerDetail);
+        verificaMouse(containerDetail, techTitle);
     }
- }
+}
 
- document.querySelectorAll('.tec').forEach(element =>{
-    element.addEventListener('mouseover', (event)=>{
-        const tech = event.currentTarget.querySelector('.nome-tec').innerHTML
-        addDetails(tech)
-    })
- })
+document.querySelectorAll('.tec').forEach(element => {
+    element.addEventListener('mouseover', (event) => {
+        const tech = event.currentTarget.querySelector('.nome-tec').innerHTML;
+        addDetails(tech);
+    });
+});
