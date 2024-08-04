@@ -16,6 +16,19 @@
         }
     }
 
+    @keyframes SlideLeft {
+        to{
+            width: 300px;
+            border-radius: 12px;
+        }
+    }
+    @keyframes SlideRight {
+        to{
+            width: 300px;
+            border-radius: 12px;
+            
+        }
+    }
     /* --------------------------------------------------------------- */
     /* SEÇÃO INTRODUÇÃO */
     .aside {
@@ -120,5 +133,20 @@
         align-items: center;
         background-color: black;
         height: 70px;
+    }
+    .bg-servicos{
+        flex-direction: column;
+    }
+    .bg-servicos .titulo {
+        font-size: 40px;
+        margin-left: 30%;
+    }
+    .servicos{
+        flex-direction: column;
+    }
+    .landing,.ecommerce{
+        width: 50px;
+        height: 120px;
+        padding: 20px;
     }
 }
