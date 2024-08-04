@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
 /* Estilo Geral */
 body {
     color: white;
     /* text-transform: capitalize; */
     font-family: Arial, Helvetica, sans-serif;
 }
-
 
 /* Estilo da Barra de Rolagem */
 ::-webkit-scrollbar {
@@ -30,12 +30,14 @@ body {
     text-transform: capitalize;
     font-size: 55px;
 }
+.font-titulo{
+    font-family: 'Vollkorn';
+    font-weight: 900;
+}
 
 
 /* ANIMAÇÕES  */
-.appear{
-    animation: Appear 300ms forwards;
-}
+
 @keyframes Appear {
     from{
         opacity: 0;
@@ -44,15 +46,33 @@ body {
         opacity: 1;
     }
 }
-
-@keyframes TextLoad {
-    
-        0%{
-            width: 0;
-        }
-    
+.appear{
+    animation: Appear 300ms ;
 }
-/*  */
+
+@keyframes SlideLeft {
+    to{
+        width: 400px;
+        border-radius: 20px;
+        /* color: white; */
+    }
+}
+.slideLeft{
+    animation: SlideLeft 2s cubic-bezier(1, 0, 0, 1) forwards;
+}
+@keyframes SlideRight {
+    to{
+        width: 400px;
+        border-radius: 20px;
+        /* color: white; */
+        
+    }
+}
+.slideRight{
+    animation: SlideRight 2s cubic-bezier(1, 0, 0, 1) forwards;
+}
+
+/* --------------------------------------------------------------- */
 /* Estilo da Barra Lateral (Aside) */
 .aside {
     position: fixed;
@@ -124,7 +144,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(45deg, rgb(19, 20, 40), rgb(17, 8, 8));
+    background-image: linear-gradient(45deg, rgb(19, 20, 40), rgb(15, 3, 82));
     height: 100vh;
 }
 
@@ -238,3 +258,50 @@ body {
 .contatos-respo{
     display: none;
 }
+
+
+/*  SEÇÃO DE SERVIÇOS */
+
+.bg-servicos{
+    background-image: linear-gradient(180deg, rgb(6, 4, 24),rgb(8, 8, 44));
+    height: 100vh;
+    padding-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bg-servicos .titulo{
+    margin: 30px 0 30px 43%;
+    margin-left: 43%;
+    margin-bottom: 30px;
+}
+.servicos{
+    display: flex;
+    /* width: 800px; */
+    /* flex-direction: column; */
+    justify-content: center;
+    /* align-items: center; */
+}
+.landing,.ecommerce{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(3, 3, 97, 0.493);
+    height: 300px;
+    width: 0;
+    margin: 30px;
+    padding: 10px;
+    color: transparent;
+    font-size: 20px
+    
+}
+.landing h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.ecommerce h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+/* --------------------------- */
