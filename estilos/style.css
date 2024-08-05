@@ -136,7 +136,7 @@ body {
 /* Estilo das Tecnologias */
 .bg-tecs {
     min-height: 100vh;
-    background-image: linear-gradient(90deg, #2b2323, rgb(15, 15, 20));
+    background-image: linear-gradient(90deg, rgb(19, 20, 40) , rgb(15, 3, 82) );
 }
 
 .tecnologias {
@@ -144,7 +144,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(45deg, rgb(19, 20, 40), rgb(15, 3, 82));
+
     height: 100vh;
 }
 
@@ -203,7 +203,7 @@ body {
 
 /* Estilo da Seção Formação */
 .bg-formacao{
-    background-image:linear-gradient(25deg, rgb(0, 1, 44), black);
+    background-image:linear-gradient(25deg, rgb(0, 1, 42) 10%, black);
     /* animation: UpDown 2s linear infinite; */
     height: 100vh;
     display: flex;
