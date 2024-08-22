@@ -1,5 +1,5 @@
 const details = {
-    javascript: "JavaScript é usado para adicionar interatividade a páginas web, desenvolver interfaces dinâmicas de front-end, criar back-ends com Node.js, desenvolver aplicativos móveis com React Native, criar jogos web, automatizar tarefas de desenvolvimento, desenvolver aplicativos de desktop com Electron e em projetos de IoT.",
+    javascript: "JavaScript é usado para adicionar interatividade a páginas web, desenvolver interfaces dinâmicas de front-end e criar back-ends com Node.js.",
     html: "HTML é a linguagem de marcação usada para criar a estrutura das páginas web. Ele permite definir elementos como títulos, parágrafos, links, imagens, entre outros.",
     css: "CSS é a linguagem de estilos utilizada para definir a apresentação de documentos HTML. Com CSS, é possível alterar cores, fontes, espaçamento e layout das páginas web.",
     'react.js': "React é uma biblioteca JavaScript para a construção de interfaces de usuário. Ele facilita a criação de componentes reutilizáveis e gerenciamento de estado.",
@@ -21,7 +21,6 @@ function addClass(el){
 }
 
  function addDetails(tech){
-    console.log('teste');
     const detail = details[tech.toLowerCase()]
     if(detail){
         const containerDetail = document.querySelector('.tec-details')
@@ -33,11 +32,34 @@ function addClass(el){
  }
 
  document.querySelectorAll('.tec').forEach(element =>{
+
     element.addEventListener('mouseover', (event)=>{
+        const containerInfo = document.querySelector('.details-tec')
+        containerInfo.style.display='block'
         const tech = event.currentTarget.querySelector('.nome-tec').innerHTML
         addDetails(tech)
     })
  })
+
+
+ const tecs = document.querySelector('.bg-tecs')
+
+ const observerTecs = new IntersectionObserver( (entries) => {
+     entries.forEach( (entry) => {
+           if(!entry.isIntersecting){
+             tecs.querySelector('.details-tec').style.display='none'
+           } else{
+            //  tecs.querySelector('.details-tec').style.display='block'
+
+           }
+           console.log(entry);
+           
+     })    
+     
+ })
+ 
+ observerTecs.observe(tecs)
+
 
 //  --------------------------------------------------------------------------------  //
 
@@ -52,7 +74,7 @@ const observer = new IntersectionObserver((entries) => {
                 services.querySelector('.landing').style.color='white'
                 services.querySelector('.ecommerce').style.color='white'
             },2500)
-            console.log(entry);
+            // console.log(entry);
         }else{
             services.querySelector('.landing').classList.remove('slideLeft')
             services.querySelector('.ecommerce').classList.remove('slideRight')
@@ -63,3 +85,5 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(services);
+
+
