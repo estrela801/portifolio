@@ -85,12 +85,16 @@
         animation-delay: 480ms;
     }
 
-    .tecs-titulo {
-        margin: 100px 0 0 0;
+    .controleMobile{
+        display: inline;
     }
     .details-tec {
         width: 100px;
         display: none;
+    }
+    .tec-details{
+        width: 300px;
+        padding-right: 30px;
     }
     .tec {
         height: 70px;
@@ -108,6 +112,9 @@
     }
     .tec-git, .tec-css {
         margin-right: 10px;
+    }
+    .tecs-titulo {
+        padding: 0;
     }
     /* SEÇÃO FORMACAO */
     .bg-formacao {
