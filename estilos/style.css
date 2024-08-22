@@ -5,6 +5,9 @@ body {
     /* text-transform: capitalize; */
     font-family: Arial, Helvetica, sans-serif;
 }
+.controleMobile{
+    display: none;
+}
 
 /* Estilo da Barra de Rolagem */
 ::-webkit-scrollbar {
