@@ -35,7 +35,15 @@ function addClass(el){
 
     element.addEventListener('mouseover', (event)=>{
         const containerInfo = document.querySelector('.details-tec')
-        containerInfo.style.display='block'
+
+        const varControleMobile = document.querySelector('.controleMobile').style.display='none'
+        if(varControleMobile){
+        containerInfo.style.display='none'
+
+        }else{
+            containerInfo.style.display='block'
+
+        }
         const tech = event.currentTarget.querySelector('.nome-tec').innerHTML
         addDetails(tech)
     })
