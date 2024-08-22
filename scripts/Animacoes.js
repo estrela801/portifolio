@@ -5,9 +5,13 @@ const details = {
     'react.js': "React é uma biblioteca JavaScript para a construção de interfaces de usuário. Ele facilita a criação de componentes reutilizáveis e gerenciamento de estado.",
     git: "Git é um sistema de controle de versão distribuído usado para rastrear mudanças no código-fonte durante o desenvolvimento de software.",
     "node.js": "Node.js é um ambiente de execução JavaScript que permite o uso do JavaScript no lado do servidor para criar aplicativos web escaláveis e eficientes.",
+    express: "Express é um framework para Node.js que simplifica a criação de aplicações web e APIs. Ele fornece uma série de ferramentas robustas para lidar com rotas, middleware e gerenciamento de requisições HTTP.",
+    mysql: "MySQL é um sistema de gerenciamento de banco de dados relacional de código aberto. Ele é amplamente utilizado para armazenar, gerenciar e recuperar dados em aplicações web e empresariais.",
     figma: "Figma é uma ferramenta de design gráfico baseada em nuvem usada para criar interfaces de usuário, protótipos e colaboração em tempo real.",
     python: "Python é uma linguagem de programação versátil e popular, conhecida por sua simplicidade e legibilidade, amplamente usada em desenvolvimento web, ciência de dados, inteligência artificial e automação."
 };
+
+
 
 function addClass(el){
     el.classList.add('appear')
