@@ -18,7 +18,7 @@ const containerInfo = document.querySelector('.details-tec')
         if(userWindowWidth< 700){
             containerInfo.style.display='none'
            //Deu certo no mobile
-        }else{
+        }else if(userWindowWidth>700){
             containerInfo.style.display='block'
             console.log('Block');
             // Ta funcionando no desktop
@@ -58,21 +58,25 @@ function addClass(el){
 
  const tecs = document.querySelector('.bg-tecs')
 
- const observerTecs = new IntersectionObserver( (entries) => {
-     entries.forEach( (entry) => {
-           if(!entry.isIntersecting){
-             tecs.querySelector('.details-tec').style.display='none'
-           } else{
-            //  tecs.querySelector('.details-tec').style.display='block'
+ const observerTecs = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        const detailsTec = tecs.querySelector('.details-tec');
+        if (!entry.isIntersecting) {
+            console.log('Contêiner saiu da viewport');
+            detailsTec.style.visibility = 'hidden';
+        } else {
+            console.log('Contêiner entrou na viewport');
+         const allTec = tecs.querySelectorAll('.tec') 
+         allTec.forEach(tec=>{
+            tec.addEventListener('mouseover', () => detailsTec.style.visibility = 'visible')
+         })    
+          
+        }
+    });
+});
 
-           }
-           console.log(entry);
-           
-     })    
-     
- })
- 
- observerTecs.observe(tecs)
+
+observerTecs.observe(tecs);
 
 
 //  --------------------------------------------------------------------------------  //
