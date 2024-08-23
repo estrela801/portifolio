@@ -57,6 +57,7 @@
         width: 200px;
         grid-template-columns: repeat(2, 100px);
         grid-template-rows: repeat(5, 100px);
+        grid-column-start: 1;
         gap: 10px 50px; 
         margin-right: 50px;
     }
@@ -115,6 +116,8 @@
     }
     .tecs-titulo {
         padding: 0;
+        margin-left: 12%;
+        padding-top: 20px;
     }
     /* SEÇÃO FORMACAO */
     .bg-formacao {
