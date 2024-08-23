@@ -18,13 +18,13 @@
 
     @keyframes SlideLeft {
         to{
-            width: 300px;
+            width: 250px;
             border-radius: 12px;
         }
     }
     @keyframes SlideRight {
         to{
-            width: 300px;
+            width: 250px;
             border-radius: 12px;
             
         }
@@ -57,9 +57,11 @@
         width: 200px;
         grid-template-columns: repeat(2, 100px);
         grid-template-rows: repeat(5, 100px);
-        grid-column-start: 1;
         gap: 10px 50px; 
         margin-right: 50px;
+    }
+    .container-tecs:nth-child(1) {
+        grid-column-start: 1;
     }
     .js {
         animation-delay: 100ms;
@@ -135,7 +137,10 @@
         font-weight: 800;
     }
     .sobre, .tecs-titulo {
-        font-size: 40px;
+        font-size: 36px;
+    }
+    .sobre{
+        margin-bottom: 30px;
     }
     .contatos-respo {
         display: flex;
