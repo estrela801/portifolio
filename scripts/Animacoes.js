@@ -11,7 +11,8 @@ const details = {
     python: "Python é uma linguagem de programação versátil e popular, conhecida por sua simplicidade e legibilidade, amplamente usada em desenvolvimento web, ciência de dados, inteligência artificial e automação."
 };
 
-
+const varControleMobile = document.querySelector('.controleMobile').style.display='none'
+    
 
 function addClass(el){
     el.classList.add('appear')
@@ -36,14 +37,15 @@ function addClass(el){
     element.addEventListener('mouseover', (event)=>{
         const containerInfo = document.querySelector('.details-tec')
 
-        const varControleMobile = document.querySelector('.controleMobile').style.display='none'
+        
         if(varControleMobile){
-        containerInfo.style.display='none'
-
+           //Deu certo no mobile
         }else{
             containerInfo.style.display='block'
-
+            console.log('Block');
+            // Ta funcionando no desktop
         }
+
         const tech = event.currentTarget.querySelector('.nome-tec').innerHTML
         addDetails(tech)
     })
