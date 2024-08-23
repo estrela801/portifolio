@@ -11,7 +11,20 @@ const details = {
     python: "Python é uma linguagem de programação versátil e popular, conhecida por sua simplicidade e legibilidade, amplamente usada em desenvolvimento web, ciência de dados, inteligência artificial e automação."
 };
 
-const varControleMobile = document.querySelector('.controleMobile').style.display='none'
+const userWindowWidth = window.innerWidth
+const containerInfo = document.querySelector('.details-tec')
+
+        
+        if(userWindowWidth< 700){
+            containerInfo.style.display='none'
+           //Deu certo no mobile
+        }else{
+            containerInfo.style.display='block'
+            console.log('Block');
+            // Ta funcionando no desktop
+        }
+
+// const varControleMobile = document.querySelector('.controleMobile').style.display='none'
     
 
 function addClass(el){
@@ -35,16 +48,7 @@ function addClass(el){
  document.querySelectorAll('.tec').forEach(element =>{
 
     element.addEventListener('mouseover', (event)=>{
-        const containerInfo = document.querySelector('.details-tec')
-
         
-        if(varControleMobile){
-           //Deu certo no mobile
-        }else{
-            containerInfo.style.display='block'
-            console.log('Block');
-            // Ta funcionando no desktop
-        }
 
         const tech = event.currentTarget.querySelector('.nome-tec').innerHTML
         addDetails(tech)
