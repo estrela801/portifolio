@@ -172,6 +172,7 @@ body {
     color: white;
     text-decoration: none;
 }
+
 .tec:hover{
     background-color: rgba(72, 60, 185, 0.699);
 }
@@ -207,7 +208,26 @@ body {
     height: 70px;
     object-fit: contain;
 }
-
+.tec-git{
+    margin-left: 30px;
+}
+.tec-mysql{
+    margin-left: 18px;
+}
+.tec-html{
+    margin-left: 19px;
+}
+.tec-css{
+    margin-left: 25px;
+}
+/* .TS{
+    height: 80px;
+    width: 90px;
+    margin: 0;
+} */
+/* .ts{
+    font-size: 18px;
+} */
 
 /* Estilo da Seção Formação */
 .bg-formacao{
