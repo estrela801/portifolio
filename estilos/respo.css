@@ -76,19 +76,25 @@
         animation-delay: 200ms;
     }
     .react {
-        animation-delay: 480ms;
+        animation-delay: 560ms;
     }
     .container-tecs:nth-child(5) {
         animation-delay: 390ms;
     }
     .node {
-        animation-delay: 450ms;
+        animation-delay: 420ms;
     }
     .fig {
-        animation-delay: 450ms;
+        animation-delay: 480ms;
     }
     .py {
-        animation-delay: 480ms;
+        animation-delay: 590ms;
+    }
+    .mongodb {
+        animation-delay: 380ms;
+    }
+    .ts {
+        animation-delay: 540ms;
     }
 
     .controleMobile{
