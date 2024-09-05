@@ -9,8 +9,10 @@ const details = {
     mysql: "MySQL é um sistema de gerenciamento de banco de dados relacional de código aberto. Ele é amplamente utilizado para armazenar, gerenciar e recuperar dados em aplicações web e empresariais.",
     figma: "Figma é uma ferramenta de design gráfico baseada em nuvem usada para criar interfaces de usuário, protótipos e colaboração em tempo real.",
     python: "Python é uma linguagem de programação versátil e popular, conhecida por sua simplicidade e legibilidade, amplamente usada em desenvolvimento web, ciência de dados, inteligência artificial e automação.",
-    typescript: "TypeScript é um superset do JavaScript que adiciona tipagem estática e outros recursos avançados ao JavaScript, ajudando a evitar erros e melhorar a manutenção e escalabilidade de grandes aplicações."
+    typescript: "TypeScript é um superset do JavaScript que adiciona tipagem estática e outros recursos avançados ao JavaScript, ajudando a evitar erros e melhorar a manutenção e escalabilidade de grandes aplicações.",
+    mongodb: "MongoDB é um banco de dados NoSQL baseado em documentos que armazena dados em formato JSON-like. Ele é altamente escalável, flexível e ideal para lidar com grandes volumes de dados não estruturados."
 };
+
 
 
 const userWindowWidth = window.innerWidth
